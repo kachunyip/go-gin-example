@@ -1,1 +1,1 @@
-# go_JIANYU_practice
+# go-gin-example
