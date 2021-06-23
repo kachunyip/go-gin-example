@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e048a5be-a987-4da2-a4be-19bbf4d1bf6e" name="Default Changelist" comment="" />
+    <list default="true" id="e048a5be-a987-4da2-a4be-19bbf4d1bf6e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/app.ini" beforeDir="false" afterPath="$PROJECT_DIR$/conf/app.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/api/v1/article.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/api/v1/article.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/api/v1/tag.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/api/v1/tag.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,9 +69,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="565" y="434" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1624019516642" />
-    <state x="0" y="107" key="SettingsEditor" timestamp="1624177408742">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="300" y="136" key="SettingsEditor" timestamp="1624241850958">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="0" y="107" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1624177408742" />
+    <state x="300" y="136" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1624241850958" />
   </component>
 </project>

@@ -8,7 +8,8 @@ import (
 	"github.com/kachunyip/go-gin-example/pkg/setting"
 	"github.com/kachunyip/go-gin-example/pkg/util"
 	"github.com/unknwon/com"
-	"log"
+	//"log"
+	"github.com/kachunyip/go-gin-example/pkg/logging"
 	"net/http"
 )
 
@@ -29,7 +30,7 @@ func GetArticle(c *gin.Context) {
 		}
 	} else {
 		for _, err := range valid.Errors {
-			log.Printf("err.key: %s, err.message: %s", err.Key, err.Message)
+			logging.Info("err.key: ", err.Key, "err.message: ", err.Message)
 		}
 	}
 
@@ -69,7 +70,8 @@ func GetArticles(c *gin.Context) {
 		data["total"] = models.GetArticleTotal(maps)
 	} else {
 		for _, err := range valid.Errors {
-			log.Printf("err.key: %s, err.message: %s", err.Key, err.Message)
+			//logging.Info("err.key: %s, err.message: %s", err.Key, err.Message)
+			logging.Info("err.key: ", err.Key, "err.message: ", err.Message)
 		}
 	}
 
@@ -114,7 +116,7 @@ func AddArticle(c *gin.Context) {
 		}
 	} else {
 		for _, err := range valid.Errors {
-			log.Printf("err.key: %s, err.message: %s", err.Key, err.Message)
+			logging.Info("err.key: ", err.Key, "err.message: ", err.Message)
 		}
 	}
 
@@ -178,7 +180,7 @@ func EditArticle(c *gin.Context) {
 		}
 	} else {
 		for _, err := range valid.Errors {
-			log.Printf("err.key: %s, err.message: %s", err.Key, err.Message)
+			logging.Info("err.key: ", err.Key, "err.message: ", err.Message)
 		}
 	}
 
@@ -205,7 +207,7 @@ func DeleteArticle(c *gin.Context) {
 		}
 	} else {
 		for _, err := range valid.Errors {
-			log.Printf("err.key: %s, err.message: %s", err.Key, err.Message)
+			logging.Info("err.key: ", err.Key, "err.message: ", err.Message)
 		}
 	}
 

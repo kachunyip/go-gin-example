@@ -3,7 +3,11 @@ package routers
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/kachunyip/go-gin-example/pkg/setting"
+	"github.com/kachunyip/go-gin-example/routers/api"
 	v1 "github.com/kachunyip/go-gin-example/routers/api/v1"
+	_ "github.com/kachunyip/go-gin-example/docs"
+	swaggerFiles "github.com/swaggo/files"
+	ginSwagger "github.com/swaggo/gin-swagger"
 )
 
 func InitRouter() *gin.Engine {
@@ -13,7 +17,11 @@ func InitRouter() *gin.Engine {
 
 	gin.SetMode(setting.RunMode)
 
+	r.GET("/auth", api.GetAuth)
+	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
+
 	apiv1 := r.Group("/api/v1")
+	//apiv1.Use(jwt.JWT())
 	{
 		apiv1.GET("/tags", v1.GetTags)
 		apiv1.POST("/tags", v1.AddTag)
